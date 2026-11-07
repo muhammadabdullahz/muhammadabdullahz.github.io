@@ -1,94 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Name — Your Profession</title>
-<meta name="description" content="Personal portfolio of Your Name.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Abdullah | Your Profession</title>
+<meta name="description" content="Portfolio of Muhammad Abdullah: your profession, skills and projects.">
+<meta property="og:title" content="Muhammad Abdullah">
+<meta property="og:description" content="Your profession, skills and projects.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="#home">Your Name</a>
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
-  <nav id="nav">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<a class="skip" href="#about">Skip to content</a>
+<nav class="navbar">
+  <div class="container nav-in">
+    <a href="#hero" class="logo">Muhammad Abdullah</a>
+    <button class="toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="menu" id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="projects.html" class="cta">Projects &rarr;</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="container">
+    <div class="photo">MA<img src="assets/profile.jpg" alt="Muhammad Abdullah" onerror="this.remove()"></div>
+    <p class="eyebrow">Your Field &middot; Your Specialty &middot; Your Focus</p>
+    <h1 class="name">Muhammad Abdullah</h1>
+    <p class="tagline">One or two sentences about what you do, what you care about and the problems you like to solve.</p>
+    <p class="meta"><span>Your University or Company</span><span class="sep">|</span><span>Your City, Country</span></p>
+    <div class="btns">
+      <a href="projects.html" class="btn btn-p">View Projects</a>
+      <a href="#contact" class="btn btn-s">Get in Touch</a>
+    </div>
+  </div>
 </header>
 
-<main>
-<section id="home" class="hero">
-  <div class="wrap">
-    <p class="role">Your Profession</p>
-    <h1>Your Name</h1>
-    <p class="lead">One clear sentence about what you do and who you help.</p>
-    <p class="actions"><a class="btn" href="#contact">Contact me</a> <a class="btn ghost" href="#projects">View projects</a></p>
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="title">About</h2>
+    <div class="about">
+      <div>
+        <p>Paragraph one: who you are and what you do. Replace this text with your own words.</p>
+        <p>Paragraph two: the kind of work you have done and the skills you use most.</p>
+        <p>Paragraph three: where you studied or work now, and what you are looking for next.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>0+</b><span>Years of experience</span></div>
+        <div class="stat"><b>0</b><span>Projects completed</span></div>
+        <div class="stat"><b>0</b><span>Certifications</span></div>
+        <div class="stat"><b>0</b><span>Technologies used</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="about"><div class="wrap">
-  <h2>About</h2>
-  <p>Write 2 to 3 sentences about yourself: your background, what you work on, and what you are looking for.</p>
-</div></section>
+<section class="section alt" id="experience">
+  <div class="container">
+    <h2 class="title">Experience</h2>
 
-<section id="experience" class="alt"><div class="wrap">
-  <h2>Experience</h2>
-  <article class="item">
-    <div class="when">2023 – Present</div>
-    <div><h3>Job title, Company</h3>
-    <ul><li>What you did and the result.</li><li>Another achievement with a number if possible.</li></ul></div>
-  </article>
-  <article class="item">
-    <div class="when">2021 – 2023</div>
-    <div><h3>Job title, Company</h3>
-    <ul><li>What you did and the result.</li></ul></div>
-  </article>
-</div></section>
+    <div class="job">
+      <div class="job-h">
+        <div><h3 class="role">Job Title</h3><p class="org">Company Name</p></div>
+        <div class="when"><p>Month Year &ndash; Present</p><p>City, Country</p></div>
+      </div>
+      <ul class="bul">
+        <li>Describe what you did and the result, with a number if you can.</li>
+        <li>Describe another achievement or responsibility.</li>
+      </ul>
+    </div>
 
-<section id="education"><div class="wrap">
-  <h2>Education</h2>
-  <article class="item">
-    <div class="when">2017 – 2021</div>
-    <div><h3>Degree, University</h3><p>Field of study, honors, or thesis topic.</p></div>
-  </article>
-</div></section>
-
-<section id="skills" class="alt"><div class="wrap">
-  <h2>Skills</h2>
-  <ul class="chips">
-    <li>Skill one</li><li>Skill two</li><li>Skill three</li><li>Skill four</li><li>Skill five</li><li>Skill six</li>
-  </ul>
-</div></section>
-
-<section id="projects"><div class="wrap">
-  <h2>Projects</h2>
-  <div class="grid">
-    <article class="card"><h3>Project one</h3><p>Short description of the problem and your solution.</p><a href="#">View project</a></article>
-    <article class="card"><h3>Project two</h3><p>Short description of the problem and your solution.</p><a href="#">View project</a></article>
-    <article class="card"><h3>Project three</h3><p>Short description of the problem and your solution.</p><a href="#">View project</a></article>
+    <div class="job">
+      <div class="job-h">
+        <div><h3 class="role">Previous Job Title</h3><p class="org">Company Name</p></div>
+        <div class="when"><p>Month Year &ndash; Month Year</p><p>City, Country</p></div>
+      </div>
+      <div class="acc">
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false" aria-controls="p1"><span>Area of Work One</span><span class="icon">+</span></button>
+          <div class="panel" id="p1" hidden><ul class="bul"><li>Detail of what you did in this area.</li><li>Another detail.</li></ul></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false" aria-controls="p2"><span>Area of Work Two</span><span class="icon">+</span></button>
+          <div class="panel" id="p2" hidden><ul class="bul"><li>Detail of what you did in this area.</li></ul></div>
+        </div>
+      </div>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section id="contact" class="alt"><div class="wrap">
-  <h2>Contact</h2>
-  <p>Open to work and collaboration. Write to me and I will reply soon.</p>
-  <ul class="links">
-    <li><a href="mailto:you@example.com">you@example.com</a></li>
-    <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
-    <li><a href="https://github.com/your-username">GitHub</a></li>
-  </ul>
-</div></section>
-</main>
+<section class="section" id="education">
+  <div class="container">
+    <h2 class="title">Education</h2>
+    <div class="edu">
+      <h3>University Name</h3>
+      <p>Degree, Field of Study</p>
+      <span class="tag">Year &ndash; Year</span><span class="tag">GPA or Honors</span>
+    </div>
+    <div class="edu">
+      <h3>Previous School or College</h3>
+      <p>Degree or Certificate</p>
+      <span class="tag">Year &ndash; Year</span>
+    </div>
+  </div>
+</section>
 
-<footer><div class="wrap">© <span id="year"></span> Your Name. All rights reserved.</div></footer>
+<section class="section alt" id="skills">
+  <div class="container">
+    <h2 class="title">Skills</h2>
+    <div class="skills">
+      <div class="skill"><h3>Technical</h3><div class="chips"><span>Skill one</span><span>Skill two</span><span>Skill three</span><span>Skill four</span></div></div>
+      <div class="skill"><h3>Tools</h3><div class="chips"><span>Tool one</span><span>Tool two</span><span>Tool three</span><span>Tool four</span></div></div>
+      <div class="skill"><h3>Languages</h3><div class="chips"><span>English</span><span>Urdu</span></div></div>
+      <div class="skill"><h3>Soft skills</h3><div class="chips"><span>Communication</span><span>Teamwork</span><span>Problem solving</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+    <h2 class="title">Get in Touch</h2>
+    <p class="intro">Open to work, collaboration and conversations about my field. Write to me and I will reply soon.</p>
+    <div class="clinks">
+      <a class="cc" href="mailto:you@example.com"><small>Email</small>you@example.com</a>
+      <a class="cc" href="https://www.linkedin.com/in/muhammad-abdullah-2b5332397/" target="_blank" rel="noopener noreferrer"><small>LinkedIn</small>Muhammad Abdullah</a>
+      <a class="cc" href="https://github.com/muhammadabdullahz" target="_blank" rel="noopener noreferrer"><small>GitHub</small>muhammadabdullahz</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><p>&copy; <span id="year"></span> Muhammad Abdullah. All rights reserved.</p></div></footer>
 <script src="script.js"></script>
 </body>
 </html>

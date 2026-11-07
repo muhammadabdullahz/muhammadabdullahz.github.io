@@ -1,29 +1,26 @@
-(function () {
-  var toggle = document.querySelector('.nav-toggle');
-  var nav = document.getElementById('nav');
-  var links = nav.querySelectorAll('a');
+(function(){
+  'use strict';
+  var y=document.getElementById('year'); if(y)y.textContent=new Date().getFullYear();
 
-  toggle.addEventListener('click', function () {
-    var open = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open);
-  });
-  links.forEach(function (a) {
-    a.addEventListener('click', function () {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  var sections = document.querySelectorAll('main section[id]');
-  function highlight() {
-    var pos = window.scrollY + 120, current = '';
-    sections.forEach(function (s) { if (s.offsetTop <= pos) current = s.id; });
-    links.forEach(function (a) {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
+  var t=document.getElementById('navToggle'),m=document.getElementById('navMenu');
+  if(t&&m){
+    t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
   }
-  window.addEventListener('scroll', highlight, { passive: true });
-  highlight();
 
-  document.getElementById('year').textContent = new Date().getFullYear();
+  var secs=document.querySelectorAll('section[id],header[id]'),links=document.querySelectorAll('.menu a[href^="#"]'),tick=false;
+  function mark(){
+    var p=window.scrollY+130,c='';
+    secs.forEach(function(s){if(s.offsetTop<=p)c=s.id});
+    links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+c)});
+  }
+  window.addEventListener('scroll',function(){if(!tick){requestAnimationFrame(function(){mark();tick=false});tick=true}},{passive:true});
+  mark();
+
+  document.querySelectorAll('.acc-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var p=document.getElementById(b.getAttribute('aria-controls')),open=b.getAttribute('aria-expanded')==='true';
+      b.setAttribute('aria-expanded',!open);p.hidden=open;
+    });
+  });
 })();
