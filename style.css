@@ -126,3 +126,33 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--silver-dark);outlin
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 @media print{.navbar,.btns,.toggle{display:none}.hero,.contact{background:#fff;color:#000}}
+/* ===== PROJECTS PAGE ADDITIONS (append to the end of style.css, before the @media blocks if you like) ===== */
+
+/* category headings */
+.cat-head{max-width:720px;margin-bottom:2.2rem;padding-left:1.1rem;border-left:4px solid var(--silver)}
+.cat-title{font:600 clamp(1.5rem,3vw,1.9rem)/1.2 var(--head);color:var(--navy);margin-bottom:.5rem}
+.cat-desc{color:var(--silver-text);font-size:1rem}
+
+/* sub-group heading inside BIDA */
+.sub-title{display:flex;align-items:baseline;flex-wrap:wrap;gap:.3rem 1rem;font:600 1.15rem var(--head);color:var(--navy);margin:0 0 1rem;padding-bottom:.6rem;border-bottom:1px solid var(--border)}
+.sub-title span{font:400 .88rem var(--body);color:var(--silver-text)}
+.sub-title a{text-decoration:underline;text-underline-offset:3px}
+.sub-title ~ .sub-title{margin-top:3rem}
+.pgrid + .sub-title{margin-top:3rem}
+
+/* card refinements */
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:.8rem}
+.card-top h3{font-size:1.1rem;line-height:1.3}
+.card .ext{flex:none;width:18px;height:18px;margin-top:.2rem;color:var(--silver-dark);transition:transform var(--t),color var(--t)}
+.card:hover .ext{transform:translate(2px,-2px);color:var(--navy)}
+.card p{line-height:1.6}
+
+/* optional image slot: uncomment the <div class="thumb"> lines in projects.html when you add pictures */
+.thumb{margin:-1.4rem -1.4rem .4rem;aspect-ratio:16/9;overflow:hidden;background:var(--bg-alt);border-bottom:1px solid var(--border);border-radius:calc(var(--r) - 4px) calc(var(--r) - 4px) 0 0}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .4s ease}
+.card:hover .thumb img{transform:scale(1.03)}
+
+/* alternate background sections: keep cards crisp on grey */
+.alt .card{background:#fff}
+
+@media(max-width:700px){.pgrid{grid-template-columns:1fr}}
