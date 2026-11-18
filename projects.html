@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Muhammad Abdullah in macroeconomic forecasting, causal inference, and business intelligence.">
+    <meta name="author" content="Muhammad Abdullah">
+    <title>Projects | Muhammad Abdullah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>.page-h p,.cat-desc{max-width:none}</style>
+</head>
+<body>
+    <a href="#projects" class="skip">Skip to content</a>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-in">
+            <a href="index.html" class="logo">Muhammad Abdullah</a>
+            <button class="toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            <ul class="menu" id="navMenu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="page-h">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>Independent analyses and replications in forecasting, causal inference and business intelligence. Code on <a class="hl" href="https://github.com/muhammadabdullahz" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        </div>
+    </header>
+    <main id="projects">
+
+        <section class="section">
+            <div class="container">
+                <div class="cat-head">
+                    <h2 class="cat-title">Macroeconomic Forecasting and Time Series</h2>
+                    <p class="cat-desc">Vector autoregressions, local projections and penalized regression for U.S. macro forecasting.</p>
+                </div>
+                <div class="pgrid c2">
+                    <a class="card" href="https://github.com/muhammadabdullahz/vector-autoregressions-VAR-SW" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb"><img data-img="var-irf" alt="Vector Autoregression: Inflation, Unemployment and Monetary Policy" loading="lazy"></div>
+                        <div class="card-top"><h3>Vector Autoregression (VAR): Inflation, Unemployment and Monetary Policy</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>This project replicates Stock and Watson (2001) using a quarterly U.S. Vector Autoregression, VAR(4), to examine inflation, unemployment, and monetary policy. It applies Granger causality tests, impulse response functions, forecast error variance decomposition, structural identification, and out-of-sample forecasting to analyze macroeconomic dynamics and policy shocks.</p>
+                        <div class="chips"><span>Python</span><span>Vector Autoregression</span><span>Granger Causality</span><span>Impulse Response Functions</span><span>Structural Identification</span><span>Out-of-Sample Forecasting</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/Local-Projections-jorda-taylor" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb"><img data-img="lp-irf" alt="Local Projections: Monetary Policy Transmission" loading="lazy"></div>
+                        <div class="card-top"><h3>Local Projections: Monetary Policy Transmission</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>An independent Python replication of Figures 5 and 6 in Jord&agrave; and Taylor&rsquo;s &ldquo;Local Projections&rdquo; (2025). Estimates monetary policy effects on U.S. prices and unemployment with local projections and instrumental-variable local projections (LP-IV), coding two-stage least squares and Newey-West inference from scratch and validating against Stata.</p>
+                        <div class="chips"><span>Python</span><span>Local Projections</span><span>LP-IV</span><span>2SLS</span><span>Newey-West HAC</span><span>Wald Tests</span><span>Stata Validation</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/industrial-production-ridge-lasso" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb"><img data-img="ridge-lasso" alt="Forecasting Industrial Production with Ridge and Lasso Regression" loading="lazy"></div>
+                        <div class="card-top"><h3>Forecasting Industrial Production with Ridge and Lasso Regression</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Forecasting U.S. industrial production growth with Ridge, Lasso, and regression trees using 120+ monthly macro indicators from FRED-MD. Models are tuned with time-series cross-validation and evaluated out-of-sample against autoregressive AR(2) and historical-mean benchmarks at 1-, 3-, 6- and 12-month horizons. Built with Python and scikit-learn.</p>
+                        <div class="chips"><span>Python</span><span>scikit-learn</span><span>Ridge</span><span>Lasso</span><span>Regression Trees</span><span>Time-Series Cross-Validation</span><span>FRED-MD</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/phillips-curve-inflation-forecasting" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb"><img data-img="phillips" alt="Phillips Curve and Inflation Forecasting" loading="lazy"></div>
+                        <div class="card-top"><h3>Phillips Curve and Inflation Forecasting</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Analyzes U.S. inflation and labor-market conditions using FRED data and replicates selected Stock and Watson (2008) inflation forecasting methods in Python. Implements recursive autoregressive (AR) forecasts, moving-average (MA) models, log-differencing, annualization, and multi-horizon forecasting using pandas, NumPy, and statsmodels.</p>
+                        <div class="chips"><span>Python</span><span>pandas</span><span>NumPy</span><span>statsmodels</span><span>Recursive AR / MA Forecasts</span><span>Multi-Horizon Forecasting</span><span>FRED</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt">
+            <div class="container">
+                <div class="cat-head">
+                    <h2 class="cat-title">Causal Inference and Policy Analysis</h2>
+                    <p class="cat-desc">Difference-in-differences, regression discontinuity and instrumental variable designs.</p>
+                </div>
+                <div class="pgrid c3">
+                    <a class="card" href="https://github.com/muhammadabdullahz/card-krueger-difference-in-differences" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb"><img data-img="card-krueger" alt="Minimum Wage and Employment" loading="lazy"></div>
+                        <div class="card-top"><h3>Minimum Wage and Employment</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Python replication of Card and Krueger&rsquo;s (1994) seminal study on minimum wage policy and labor demand. Reconstructs descriptive statistics, estimates difference-in-differences (DID) and ordinary least squares (OLS) models, examines treatment effects using wage-gap measures, and conducts robustness checks with alternative full-time-equivalent (FTE) employment specifications.</p>
+                        <div class="chips"><span>Python</span><span>Difference-in-Differences</span><span>OLS</span><span>Wage-Gap Measures</span><span>FTE Robustness Checks</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/regression-discontinuity-design-RDD" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb"><img data-img="rdd" alt="CRA Designation and Mortgage Lending" loading="lazy"></div>
+                        <div class="card-top"><h3>CRA Designation and Mortgage Lending</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>An independent Python analysis of whether the Community Reinvestment Act (CRA) low- and moderate-income label, assigned to tracts below 80% of area median family income, shifts home-purchase lending. Uses 2023 Home Mortgage Disclosure Act data, regression discontinuity design, placebo cutoffs and a bank versus non-bank split.</p>
+                        <div class="chips"><span>Python</span><span>Regression Discontinuity Design</span><span>Placebo Cutoffs</span><span>HMDA</span><span>FFIEC Census Data</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/instrumental-variables-2sls-automobiles" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb"><img data-img="iv-2sls" alt="Automobile Demand with Instrumental Variables" loading="lazy"></div>
+                        <div class="card-top"><h3>Automobile Demand with Instrumental Variables</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Independent project analyzing U.S. automobile demand using 1971&ndash;1990 Berry, Levinsohn and Pakes (BLP) data. Compares two-stage least squares (2SLS), limited information maximum likelihood (LIML) and OLS to correct price endogeneity, assessing instrument strength and validity with first-stage F-statistics, weak-instrument and overidentification tests.</p>
+                        <div class="chips"><span>Python</span><span>2SLS</span><span>LIML</span><span>First-Stage F-Statistics</span><span>Weak IV Tests</span><span>Overidentification Tests</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cat-head">
+                    <h2 class="cat-title">Business Intelligence and Data Analytics</h2>
+                    <p class="cat-desc">Nine dashboards built for the Business Intelligence and Data Analytics (BIDA) certification, covering KPI reporting, profitability analysis, geographic views and parameter-driven interactivity in Tableau and Power BI.</p>
+                </div>
+                <h3 class="sub-title">Tableau &middot; <a href="https://public.tableau.com/app/profile/muhammad.abdullah7552" target="_blank" rel="noopener noreferrer">Public profile</a></h3>
+                <div class="pgrid c3">
+                    <a class="card" href="https://public.tableau.com/app/profile/muhammad.abdullah7552/viz/PerformancebyLocationDashboard_17863871580720/Dashboard2" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="tab-location" alt="Performance by Location" loading="lazy"></div>
+                        <div class="card-top"><h3>Performance by Location</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>State rankings, a product profitability treemap and a click-to-filter U.S. map built with dashboard actions that cross-filter every view.</p>
+                        <div class="chips"><span>Tableau</span><span>Dashboard Actions</span><span>Treemap</span><span>Geographic Map</span></div>
+                    </a>
+
+                    <a class="card" href="https://public.tableau.com/app/profile/muhammad.abdullah7552/viz/SalesandPerformanceDashboard_17863866022850/Dashboard1" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="tab-sales" alt="Sales Dashboard" loading="lazy"></div>
+                        <div class="card-top"><h3>Sales Dashboard</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Executive key performance indicators (KPIs), customer profitability and monthly trends, with a parameter that switches the measure displayed.</p>
+                        <div class="chips"><span>Tableau</span><span>Parameters</span><span>KPIs</span><span>Calculated Fields</span></div>
+                    </a>
+
+                    <a class="card" href="https://public.tableau.com/app/profile/muhammad.abdullah7552/viz/PrivateCompaniesUS/Dashboard1" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="tab-private" alt="Fastest Growing Private Companies" loading="lazy"></div>
+                        <div class="card-top"><h3>Fastest Growing Private Companies</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Industry-aware Top-N rankings using context filters so the ranking is computed after the industry filter, plus a choropleth map and treemap.</p>
+                        <div class="chips"><span>Tableau</span><span>Top-N Sets</span><span>Context Filters</span><span>Choropleth Map</span></div>
+                    </a>
+
+                    <a class="card" href="https://public.tableau.com/app/profile/muhammad.abdullah7552/viz/CalwestE-CommercePerformanceSummary_17864809409940/Dashboard1" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="tab-ecommerce" alt="Calwest E-Commerce Summary" loading="lazy"></div>
+                        <div class="card-top"><h3>Calwest E-Commerce Summary</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Revenue, profit and profit margin KPIs with a trendline that switches measure through a parameter, and a product-level scatter plot.</p>
+                        <div class="chips"><span>Tableau</span><span>Parameters</span><span>Trendline</span><span>Scatter Plot</span></div>
+                    </a>
+
+                    <a class="card" href="https://public.tableau.com/app/profile/muhammad.abdullah7552/viz/CalwestRegionalPerformanceSummary_17864801314860/Dashboard2" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="tab-regional" alt="Calwest Regional Summary" loading="lazy"></div>
+                        <div class="card-top"><h3>Calwest Regional Summary</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Regional revenue map, monthly promotional mix computed with table calculations, and a subcategory profit margin treemap.</p>
+                        <div class="chips"><span>Tableau</span><span>Table Calculations</span><span>Maps</span><span>Treemap</span></div>
+                    </a>
+                </div>
+                <h3 class="sub-title">Power BI &middot; <a href="https://github.com/muhammadabdullahz/my-power-bi-projects" target="_blank" rel="noopener noreferrer">Screenshots</a></h3>
+                <div class="pgrid c2">
+                    <a class="card" href="https://github.com/muhammadabdullahz/my-power-bi-projects" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="pbi-sales" alt="Retail Sales" loading="lazy"></div>
+                        <div class="card-top"><h3>Retail Sales</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Sales, year-to-date (YTD) sales and gross margin by department, store type and location, built with Data Analysis Expressions (DAX) measures.</p>
+                        <div class="chips"><span>Power BI</span><span>DAX</span><span>Time Intelligence</span><span>Gross Margin</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/my-power-bi-projects" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="pbi-cost" alt="Retail Cost and Target" loading="lazy"></div>
+                        <div class="card-top"><h3>Retail Cost and Target</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Costs, wages and rent against targets by store, with conditional formatting that flags stores above or below target.</p>
+                        <div class="chips"><span>Power BI</span><span>Conditional Formatting</span><span>Targets vs. Actuals</span><span>DAX</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/my-power-bi-projects" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="pbi-exchanges" alt="NASDAQ vs. NYSE Trading Volume" loading="lazy"></div>
+                        <div class="card-top"><h3>NASDAQ vs. NYSE Trading Volume</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Daily trading volume and number of listed securities compared across the NASDAQ and the New York Stock Exchange (NYSE).</p>
+                        <div class="chips"><span>Power BI</span><span>Time Series</span><span>Trading Volume</span><span>Market Data</span></div>
+                    </a>
+
+                    <a class="card" href="https://github.com/muhammadabdullahz/my-power-bi-projects" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb shot"><img data-img="pbi-equity" alt="Equity Portfolio and Volatility" loading="lazy"></div>
+                        <div class="card-top"><h3>Equity Portfolio and Volatility</h3><span class="ext" aria-hidden="true">&#8599;</span></div>
+                        <p>Price volatility, portfolio weights and portfolio values, with an animated scatter plot driven by a play axis.</p>
+                        <div class="chips"><span>Power BI</span><span>Volatility</span><span>Portfolio Weights</span><span>Play Axis</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container"><p>&copy; <span id="year"></span> Muhammad Abdullah. All rights reserved.</p></div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    /* Loads images from the images:projects folder, trying common extensions. Hides the frame if none is found. */
+    (function(){
+        var dir="images%3Aprojects/",exts=["png","jpg","jpeg","webp"];
+        document.querySelectorAll("img[data-img]").forEach(function(img){
+            var i=0,name=img.getAttribute("data-img");
+            img.onerror=function(){ if(++i<exts.length){img.src=dir+name+"."+exts[i];} else {img.onerror=null;img.parentNode.style.display="none";} };
+            img.src=dir+name+"."+exts[0];
+        });
+    })();
+    </script>
+</body>
+</html>
