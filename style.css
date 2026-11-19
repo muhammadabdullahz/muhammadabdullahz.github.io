@@ -167,3 +167,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--silver-dark);outlin
 
 @media(max-width:900px){.pgrid.c3{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.pgrid.c2,.pgrid.c3{grid-template-columns:1fr}}
+
+/* ===== ABOUT: pull quote ===== */
+.pull{
+  margin:0;
+  padding:1.2rem 1.4rem;
+  background:rgba(44,74,115,.08);
+  border-left:4px solid var(--navy-light);
+  border-radius:0 var(--r) var(--r) 0;
+}
+.pull p{font:italic 500 1.3rem/1.4 var(--head);color:var(--navy);margin:0 0 .6rem}
+.pull cite{font:600 .8rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--silver-text);font-style:normal}
