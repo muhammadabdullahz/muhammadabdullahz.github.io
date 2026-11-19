@@ -129,9 +129,17 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--silver-dark);outlin
 /* ===== PROJECTS PAGE: replace the earlier additions with this block ===== */
 .page-h .hl{color:#fff;text-decoration:underline;text-underline-offset:3px}
 
-.cat-head{max-width:640px;margin-bottom:2rem;padding-left:1.1rem;border-left:4px solid var(--silver)}
-.cat-title{font:600 clamp(1.5rem,3vw,1.9rem)/1.2 var(--head);color:var(--navy);margin-bottom:.4rem}
-.cat-desc{color:var(--silver-text)}
+/* category banner: faded translucent navy tint, like the gold one on the other site */
+.cat-head{
+  margin:3rem 0 1.5rem;
+  padding:.9rem 1.25rem;
+  background:rgba(44,74,115,.10);          /* translucent navy-light tint */
+  border-left:4px solid var(--navy-light);
+  border-radius:0 var(--r) var(--r) 0;
+}
+.cat-head:first-child{margin-top:0}
+.cat-title{font:600 clamp(1.3rem,2.5vw,1.6rem)/1.2 var(--head);color:var(--navy);margin-bottom:.25rem}
+.cat-desc{color:var(--silver-text);font-size:.95rem}
 
 .sub-title{font:600 1.1rem var(--head);color:var(--navy);margin:0 0 1rem}
 .sub-title a{font:400 .85rem var(--body);text-decoration:underline;text-underline-offset:3px}
